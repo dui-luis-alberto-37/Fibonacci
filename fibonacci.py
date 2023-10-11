@@ -4,8 +4,9 @@
 # 11/10/23
 # LICENSE: GNU/GPL
 from math import sqrt
+import matplotlib.pyplot  as plt
 
-n = int(input())
+n = 10
 fibo = [1,1]
 
 if n > 1:
@@ -21,4 +22,12 @@ else: print(fibo)
 
 razones = [fibo[i+1]/fibo[i] for i in range(len(fibo)-1)]
 print(sum(razones)/len(razones),(1+sqrt(5))/2, razones[-1])
+
+gr = (1+sqrt(5))/2
+x = [0,1,1,0,0]
+y = [0,0,gr,gr,0]
+
+plt.plot(x,y)
+
+plt.show()
     
