@@ -20,5 +20,5 @@ else: print(fibo)
     # print(fibo[i+1])
 
 razones = [fibo[i+1]/fibo[i] for i in range(len(fibo)-1)]
-print(sum(razones)/len(razones),(1+sqrt(5))/2)
+print(sum(razones)/len(razones),(1+sqrt(5))/2, razones[-1])
     
